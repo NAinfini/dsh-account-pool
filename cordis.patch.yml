@@ -1,0 +1,13 @@
+# dsh-account-pool bundle layer (local build).
+#
+# One plugin row registers the `opencode` and `opendesign` provider routes with
+# multi-account rotation. Every field is optional; accounts and the pinned
+# account are owned by the settings page, so none are shipped here (a
+# composition-layer row would come back on every reload next to the saved ones).
+#
+# `name` must be the full package specifier as installed in the profile's
+# node_modules.
+- insert:
+    - id: llm-account-pool
+      name: "dsh-account-pool"
+      config: {}
